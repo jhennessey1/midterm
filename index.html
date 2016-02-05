@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="gameMod">
+	<head>
+		<title>Hover Game</title>
+		<link rel="stylesheet" href="main.css"/>
+		<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js'></script>
+		<script type='text/javascript' src='main.js'></script>
+	</head>
+	<body ng-controller="gameController">
+		<div class="top">
+			<h1>Hover Game</h1>
+			<h2><!--TIMER--><h2>
+		</div>
+		<div class="leftSide">
+			<!--Left Side, facebook, twitter, whatever-->
+		</div>
+		<div class="mainGame">
+			<!--Main Game-->
+			<div class="hoverObject" ng-style="hoverStyle" ng-mouseleave="gameOver()" ng-hide="gameOverHide">
+				<!--Hover Object-->
+			</div>
+			<div class="gameOverMessage" ng-show="gameOverShow">GAME OVER!!! <p>you suck.</p></div>
+		</div>
+		<div class="rightSide">
+			<!--Right Side, Ads?-->
+		</div>
+	</body>
+</html>

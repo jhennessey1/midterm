@@ -1,0 +1,46 @@
+.top {
+	text-align: center;
+}
+
+.leftSide {
+	width: 15%;
+	height: 90vh;
+	background-color: red;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.rightSide {
+	width: 15%;
+	height: 90vh;
+	background-color: green;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.mainGame {
+	height: 90vh;
+	width: 69%;
+	display: inline-block;
+	position: relative;
+}
+
+.hoverObject {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: purple;
+}
+
+.gameOverMessage {
+	position: absolute;
+	font-weight: bold;
+	font-size: 100px;
+	top: 34%;
+	left: 18%;
+}
+
+h1 {
+	font-size: 50px;
+}
