@@ -9,14 +9,14 @@
 	<body ng-controller="gameController">
 		<div class="top">
 			<h1>Hover Game</h1>
-			<h2><!--TIMER--><h2>
+			<h2>Timer: <timer /><h2>
 		</div>
 		<div class="leftSide">
 			<!--Left Side, facebook, twitter, whatever-->
 		</div>
 		<div class="mainGame">
 			<!--Main Game-->
-			<div class="hoverObject" ng-style="hoverStyle" ng-mouseleave="gameOver()" ng-hide="gameOverHide">
+			<div class="hoverObject" ng-style="hoverStyle" ng-mouseenter="gameBegin()" ng-mouseleave="gameOver()" ng-hide="gameOverHide">
 				<!--Hover Object-->
 			</div>
 			<div class="gameOverMessage" ng-show="gameOverShow">GAME OVER!!! <p>you suck.</p></div>
