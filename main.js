@@ -6,13 +6,15 @@ angular.module('gameMod')
 			top: '300px',
 			left: '300px'
 		}
+		$scope.timer = 0
 		$scope.gameBegin = function() {
-			$scope.timer-start
+			$scope.beginTimer = function() {
+				$interval(($scope.timer += 1), 1)
+			}
 		}
 		$scope.gameOver = function() {
 			$scope.gameOverHide = true
 			$scope.gameOverShow = true
-			$scope.timer-end
 		}
 	}])
 
