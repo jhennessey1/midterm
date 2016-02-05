@@ -1,7 +1,7 @@
 angular.module('gameMod', [])
 
 angular.module('gameMod')
-	.controller('gameController', ['$scope', function($scope){
+	.controller('gameController', ['$scope','$interval', function($scope, $interval){
 		$scope.hoverStyle = {
 			top: '300px',
 			left: '300px'
@@ -9,8 +9,9 @@ angular.module('gameMod')
 		$scope.timer = 0
 		$scope.gameBegin = function() {
 			$scope.beginTimer = function() {
-				$interval(($scope.timer += 1), 1)
+				timer += 1
 			}
+			$interval(function(){$scope.beginTimer()}, 1)
 		}
 		$scope.gameOver = function() {
 			$scope.gameOverHide = true
